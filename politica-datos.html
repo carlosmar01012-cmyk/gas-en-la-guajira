@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Política de Tratamiento de Datos | Gas en La Guajira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #f4fbfd;
+            color: #55758a;
+        }
+
+        /* HEADER */
+
+        .header {
+            min-height: 90px;
+            padding: 15px 6%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: #ffffff;
+            border-bottom: 1px solid #ccebf1;
+        }
+
+        .logo img {
+            width: 185px;
+            height: auto;
+            display: block;
+        }
+
+        .volver {
+            padding: 13px 19px;
+
+            border: 1px solid #009ac2;
+            border-radius: 7px;
+
+            color: #006f8f;
+            text-decoration: none;
+
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .5px;
+
+            transition: .25s ease;
+        }
+
+        .volver:hover {
+            background: #009ac2;
+            color: white;
+        }
+
+        /* PORTADA */
+
+        .legal-hero {
+            padding: 85px 6% 75px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #003f63 0%,
+                    #006f8f 65%,
+                    #00a994 100%
+                );
+
+            color: white;
+        }
+
+        .legal-hero-inner {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .legal-label {
+            display: block;
+            margin-bottom: 20px;
+
+            color: #27e2d1;
+
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .legal-hero h1 {
+            max-width: 800px;
+
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: .98;
+            letter-spacing: -3px;
+        }
+
+        .legal-hero h1 strong {
+            color: #27e2d1;
+        }
+
+        .legal-hero p {
+            max-width: 600px;
+
+            margin-top: 25px;
+
+            color: #d2edf1;
+
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* CONTENIDO */
+
+        .legal-content {
+            width: calc(100% - 50px);
+            max-width: 1000px;
+
+            margin: 55px auto;
+            padding: 55px 60px;
+
+            background: white;
+
+            border: 1px solid #ccebf1;
+            border-radius: 15px;
+
+            box-shadow: 0 15px 50px rgba(0, 75, 112, .06);
+        }
+
+        .legal-section {
+            padding: 30px 0;
+            border-bottom: 1px solid #e2f2f5;
+        }
+
+        .legal-section:first-child {
+            padding-top: 0;
+        }
+
+        .legal-section:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .legal-section h2 {
+            margin-bottom: 16px;
+
+            color: #004b70;
+
+            font-family: "Manrope", sans-serif;
+            font-size: 20px;
+        }
+
+        .legal-section p {
+            margin-bottom: 12px;
+
+            font-size: 13px;
+            line-height: 1.85;
+        }
+
+        .legal-section ul {
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+
+        .legal-section li {
+            margin-bottom: 10px;
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .responsable {
+            margin-top: 20px;
+            padding: 25px;
+
+            background: #e9f9fc;
+            border-left: 4px solid #00d6c5;
+
+            border-radius: 0 8px 8px 0;
+        }
+
+        .responsable strong {
+            color: #004b70;
+        }
+
+        .responsable a {
+            color: #009ac2;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            padding: 35px 6%;
+
+            background: #003f63;
+            color: #a9d3dc;
+        }
+
+        .footer-inner {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+            font-size: 9px;
+            letter-spacing: .5px;
+        }
+
+        .footer strong {
+            color: #27e2d1;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #27e2d1;
+        }
+
+        /* CELULAR */
+
+        @media screen and (max-width: 720px) {
+
+            .header {
+                min-height: 75px;
+                padding: 12px 25px;
+            }
+
+            .logo img {
+                width: 145px;
+            }
+
+            .volver {
+                padding: 10px 12px;
+                font-size: 8px;
+            }
+
+            .legal-hero {
+                padding: 65px 28px;
+            }
+
+            .legal-hero h1 {
+                font-size: 40px;
+                line-height: 1;
+                letter-spacing: -2px;
+            }
+
+            .legal-content {
+                width: calc(100% - 40px);
+
+                margin: 30px auto;
+                padding: 35px 25px;
+
+                border-radius: 12px;
+            }
+
+            .legal-section {
+                padding: 25px 0;
+            }
+
+            .legal-section h2 {
+                font-size: 18px;
+            }
+
+            .legal-section p,
+            .legal-section li {
+                font-size: 12px;
+            }
+
+            .responsable {
+                padding: 20px;
+            }
+
+            .footer-inner {
+                display: block;
+                line-height: 1.8;
+            }
+
+            .footer-inner a {
+                display: block;
+                margin-top: 8px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="imagenes/logo.png" alt="Gas en La Guajira">
+        </a>
+
+        <a href="index.html" class="volver">
+            ← VOLVER AL INICIO
+        </a>
+
+    </header>
+
+
+    <!-- PORTADA -->
+
+    <section class="legal-hero">
+
+        <div class="legal-hero-inner">
+
+            <span class="legal-label">
+                INFORMACIÓN LEGAL
+            </span>
+
+            <h1>
+                POLÍTICA DE<br>
+                TRATAMIENTO DE <strong>DATOS.</strong>
+            </h1>
+
+            <p>
+                Conoce los lineamientos aplicables a la protección
+                y tratamiento de datos personales relacionados con
+                el sitio web Gas en La Guajira.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="legal-content">
+
+        <section class="legal-section">
+
+            <h2>1. Responsable del tratamiento</h2>
+
+            <p>
+                La responsable del tratamiento de datos personales
+                relacionados con este sitio web es:
+            </p>
+
+            <div class="responsable">
+
+                <p>
+                    <strong>Responsable:</strong>
+                    Esperanza del Pilar Prieto Manrique
+                </p>
+
+                <p>
+                    <strong>Dirección:</strong>
+                    Carrera 6 # 9-77, Soatá, Boyacá, Colombia
+                </p>
+
+                <p>
+                    <strong>Correo electrónico:</strong>
+                    <a href="mailto:esperanzadelpilarprieto@gmail.com">
+                        esperanzadelpilarprieto@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>2. Objeto</h2>
+
+            <p>
+                La presente Política de Tratamiento de Datos Personales
+                establece los lineamientos aplicables al manejo y
+                protección de los datos personales relacionados con
+                el sitio web “Gas en La Guajira”, de conformidad con
+                la legislación colombiana aplicable en materia de
+                protección de datos personales.
+            </p>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>3. Naturaleza del sitio web</h2>
+
+            <p>
+                “Gas en La Guajira” es un sitio web de carácter
+                informativo y educativo, orientado a brindar información
+                relacionada con el gas natural, su consumo responsable
+                y recomendaciones generales de seguridad.
+            </p>
+
+            <p>
+                Actualmente, el sitio web no dispone de formularios
+                destinados a solicitar directamente datos personales
+                como nombre, número de identificación, teléfono o
+                dirección.
+            </p>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>4. Tratamiento de datos personales</h2>
+
+            <p>
+                En caso de que en el futuro el sitio implemente mecanismos
+                que permitan recopilar datos personales, el titular será
+                informado acerca de los datos solicitados, las finalidades
+                específicas de su tratamiento y, cuando corresponda
+                legalmente, se solicitará su autorización previa e informada.
+            </p>
+
+            <p>
+                Los datos personales que llegaren a ser tratados serán
+                utilizados únicamente para las finalidades informadas al
+                titular y serán manejados de conformidad con la legislación
+                colombiana aplicable.
+            </p>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>5. Principios aplicables</h2>
+
+            <p>
+                El tratamiento de datos personales se realizará observando
+                los principios establecidos en la Ley 1581 de 2012,
+                incluyendo los principios de legalidad, finalidad, libertad,
+                veracidad o calidad, transparencia, acceso y circulación
+                restringida, seguridad y confidencialidad.
+            </p>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>6. Derechos de los titulares</h2>
+
+            <p>
+                De acuerdo con la legislación colombiana, los titulares
+                de datos personales podrán, según corresponda:
+            </p>
+
+            <ul>
+                <li>Conocer, actualizar y rectificar sus datos personales.</li>
+
+                <li>
+                    Solicitar prueba de la autorización otorgada,
+                    cuando esta sea requerida.
+                </li>
+
+                <li>
+                    Ser informados sobre el uso dado a sus datos personales.
+                </li>
+
+                <li>
+                    Presentar consultas o reclamos relacionados con
+                    el tratamiento de sus datos.
+                </li>
+
+                <li>
+                    Revocar la autorización y/o solicitar la supresión
+                    de los datos cuando proceda legalmente.
+                </li>
+
+                <li>
+                    Acceder gratuitamente a sus datos personales en
+                    los términos establecidos por la normativa aplicable.
+                </li>
+
+                <li>
+                    Presentar quejas ante la Superintendencia de Industria
+                    y Comercio, previo cumplimiento de los requisitos
+                    legales correspondientes.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>7. Consultas y reclamos</h2>
+
+            <p>
+                Las consultas, solicitudes o reclamos relacionados con
+                el tratamiento de datos personales podrán presentarse
+                mediante el siguiente correo electrónico:
+            </p>
+
+            <div class="responsable">
+
+                <p>
+                    <strong>Correo:</strong>
+                    <a href="mailto:esperanzadelpilarprieto@gmail.com">
+                        esperanzadelpilarprieto@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Dirección:</strong>
+                    Carrera 6 # 9-77, Soatá, Boyacá, Colombia
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>8. Seguridad de la información</h2>
+
+            <p>
+                En caso de realizarse tratamiento de datos personales,
+                se adoptarán medidas razonables de carácter administrativo
+                y técnico destinadas a proteger la información contra
+                pérdida, uso indebido, acceso no autorizado, alteración
+                o divulgación indebida.
+            </p>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>9. Cambios en la política</h2>
+
+            <p>
+                La presente política podrá ser actualizada cuando resulte
+                necesario debido a cambios en el sitio web, en las
+                actividades de tratamiento de información o en la
+                normativa aplicable.
+            </p>
+
+            <p>
+                Los cambios relevantes serán informados a través del
+                sitio web cuando corresponda.
+            </p>
+
+        </section>
+
+
+        <section class="legal-section">
+
+            <h2>10. Vigencia</h2>
+
+            <p>
+                La presente Política de Tratamiento de Datos Personales
+                entra en vigencia a partir del 1 de octubre de 2026.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <strong>GAS EN LA GUAJIRA</strong>
+
+            <span>
+                Política de Tratamiento de Datos Personales
+            </span>
+
+            <a href="index.html">
+                Volver al sitio principal →
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
